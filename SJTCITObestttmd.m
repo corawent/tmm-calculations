@@ -3,7 +3,6 @@ clear;
 close all;
 
 %% inputs
-
 %starting value for jsc
 ttmds=1:50;
 jscs=zeros(1,length(ttmds));
