@@ -6,11 +6,11 @@ close all;
 %thicknesses
 tito=100;
 tmet1=5;
-ttmd=24;
+ttmd=32;
 tmet2=100;
 
 %which TMD/metal?
-tmd_ind=2; %1,2,3,4 are mos2, ws2, mose2, wse2
+tmd_ind=3; %1,2,3,4 are mos2, ws2, mose2, wse2
 met1_ind=1; %1,2,3,4,5,6 are au, ag, pt, in, pd, al; met1=top
 met2_ind=2; %met2=bottom
 
@@ -158,7 +158,7 @@ xlabel('Wavelength [nm]')
 ylabel('Absorption')
 legend('ITO',metals{met1_ind},tmds{tmd_ind},metals{met2_ind},'Total','Solar')
 ylim([0,1])
-formatpresplot
+formatpresplot(8,8)
 %export_fig 20nmAu35nmmose2_absorption -transparent -m4
 
 % figure(2)
