@@ -34,7 +34,7 @@ t=zeros(length(lambdai),1);
 a=zeros(length(lambdai),1);
 
 %load data
-load('nkdata'); %pd and pt from werner;
+load('nkdata_old'); %pd and pt from werner;
 load('am1p5_raw');
 
 %% select materials

@@ -53,7 +53,7 @@ end
 
 ev=transpose(1:0.01:3);
 
-load('nkdata'); %wl in units of microns, n, k
+load('nkdata_old'); %wl in units of microns, n, k
 load('ftpsdata'); %eV, something prop. to alpha
 
 tmd(1).nk=mos2_raw;

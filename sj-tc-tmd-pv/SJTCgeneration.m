@@ -39,7 +39,7 @@ a_tmd=zeros(length(lambdai),3);
 g_tmd=zeros(length(lambdai),h(3)+1);
 
 %load data
-load('nkdata'); %pd and pt from werner;
+load('nkdata_old'); %pd and pt from werner;
 load('am1p5_raw');
 
 %% select materials
