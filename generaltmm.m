@@ -4,7 +4,7 @@ close all;
 
 %% inputs
 
-%materials in stack
+%materials in stack (must correspond to name of variable in nkdata.mat)
 mat_list=["SiO_2","Pt","WS_2","Ag"];
 
 %thicknesses, starting and ending with NaN
@@ -101,7 +101,7 @@ int=am1p5(:,2).*activeabs(:,2)*const_q/(const_h*const_c).*lambdai*10^(-9);
 jsc1=trapz(lambdai,int)/10;
 jsc2=1000*trapz(z*10^9,activegen*10^-7*const_q); %mA/A*carriers/(cm^3*s)*C/carrier*(nm/cm)*nm=mA/cm^2
 
-%% calculate color of reflected light, plot
+%% calculate color of reflected light
 em=0;
 [rgb,xyzval]=spectrumtocolor(lambdai,r,em);
 
